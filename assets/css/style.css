@@ -162,7 +162,7 @@ body {
     box-sizing: border-box;
 }
 
-.run-buddy-overlay {
+.content-overlay {
     background-color: var(--primary-color);
     color: white;
     padding: 5px;
@@ -187,10 +187,11 @@ body {
     opacity: 0.7;
   }
 
-.horiseon-overlay {
+/* .content-overlay {
     background-color: var(--primary-color);
     color: white;
-}
+    padding: 5px;
+} */
 
 .work-text {
     margin: 20px;
@@ -231,11 +232,21 @@ footer a {
 
 
     footer {
+        padding-bottom: 5px;
+        justify-content: space-around;
+    }
+
+    footer h2 {
+        width: 30%;
         text-align: center;
-        width: 100%;
     }
 }
 
 @media screen and (max-width: 768px) {
-    
+    .content-overlay {
+        font-size: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 3 30%;
+    }
 }
