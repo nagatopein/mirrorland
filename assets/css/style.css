@@ -1,6 +1,6 @@
 :root {
     --primary-color: rgb(212, 125, 25, 0.7);
-    --secondary-color: black;
+    --secondary-color: white;
     --tertiary-color: rgba(128, 18, 128);
 }
 * {
@@ -23,14 +23,14 @@ header {
     background-image: url("../images/exhero.jpeg");
     background-attachment: fixed;
     background-size: cover;
-    background-position: 60%;
+    background-position: 40%;
 }
 
 .bio {
     background-image: url("../images/exhero.jpeg");
     background-attachment: fixed;
     background-size: cover;
-    background-position: 60%;
+    background-position: 40%;
     object-fit: fill;
     display: flex;
     flex-wrap: wrap;
@@ -73,10 +73,23 @@ header nav ul li a {
     display: flex;
 }
 
+.section {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+
+}
+
 .section-title {
     font-size: 32px;
-    border-bottom: 3px solid var(--tertiary-color);
-    width: 30%;
+    text-align: left;
+    margin-left: 5%;
+    padding-bottom: 5px;
+}
+
+.work h2 {
+    border-bottom: 3px solid bisque;
+    width: 40%;
     text-align: center;
 }
 
@@ -124,13 +137,13 @@ header nav ul li a {
 body {
     /* font color and style for webpage */
     color: var(--secondary-color);
-    background-image: url("../images/exhero.jpeg");
+    /* background-image: url("../images/exhero.jpeg");
     background-attachment: fixed;
     background-size: cover;
-    background-position: 60%;
+    background-position: 60%; */
     object-fit: fill;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    background-color: rgb(74, 60, 43);
+    background-color: #613518;
 }
 
 .work a {
@@ -160,20 +173,69 @@ body {
     margin: 5%;
     display: flex;
     flex-wrap: none;
+    justify-content: space-around;
 }
 
-.horiseon video {
+.horiseon .video {
     border: 3px solid var(--tertiary-color);
     box-sizing: border-box;
+    margin-left: 10%;
+    transition: .5s ease;
 }
+
+.content-video:hover .video {
+    opacity: 0.7;
+  }
 
 .horiseon-overlay {
     background-color: var(--primary-color);
     color: white;
-    padding: 5px;
 }
 
 .work-text {
     margin: 20px;
     padding: 10px;
+}
+
+footer {
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--primary-color);
+    background-image: url("../images/exhero.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 40%;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 5px;
+        justify-content: center;
+    }
+
+    header h1 {
+        width: 80%;
+        text-align: center;
+    }
+
+    .section-title {
+        width: 80%;
+    }
+
+
+    footer {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
 }
